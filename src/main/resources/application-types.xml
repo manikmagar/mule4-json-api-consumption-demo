@@ -5,4 +5,13 @@
       <types:example format="json" location="examples/httpbin-get.json"/>
     </types:type>
   </types:catalog>
+  <types:enrichment select="#e37b0fd8-00cb-4908-820f-fec74a915d52">
+    <types:processor-declaration>
+      <types:output-event>
+        <types:message>
+          <types:payload type="httpbin-output"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
 </types:mule>
